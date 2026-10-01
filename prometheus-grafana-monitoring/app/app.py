@@ -42,6 +42,11 @@ def log_request(response):
 def home():
     return "Hello from the monitored Flask app!"
 
+@app.route('/error')
+def trigger_error():
+    # This forces a 500 Internal Server Error for testing alerts
+    return "Internal Server Error Simulation", 500
+
 @app.route('/metrics')
 def metrics():
     return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
