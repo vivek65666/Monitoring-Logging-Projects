@@ -287,6 +287,23 @@ sum(rate(flask_http_requests_total{status=~"4..|5.."}[5m]))
 
 ---
 
+## 📊 Project Visualizations & Validation
+
+### 1. Application Health (Flask)
+![Flask App](screenshots/FLask.png)
+
+### 2. Grafana Dashboards
+**HTTP Request Rate & Status:**
+![HTTP Request Rate](screenshots/HTTP%20Request%20Rate%20%26%20Status.png)
+
+**Infrastructure & Node Exporter:**
+![Production Observability Stack](screenshots/Production%20Observability%20Stack.png)
+
+### 3. Alert Lifecycle & Routing
+![Alertmanager](screenshots/alertmanager.png)
+
+---
+
 ## Future Improvements
 
 - [ ] Add alert notifications (email or Slack) in Alertmanager
