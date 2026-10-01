@@ -290,7 +290,7 @@ sum(rate(flask_http_requests_total{status=~"4..|5.."}[5m]))
 ## 📊 Project Visualizations & Validation
 
 ### 1. Application Health (Flask)
-![Flask App](screenshots/FLask.png)
+![Flask App](screenshots/Flask App.png)
 
 ### 2. Grafana Dashboards
 **HTTP Request Rate & Status:**
