@@ -292,6 +292,9 @@ sum(rate(flask_http_requests_total{status=~"4..|5.."}[5m]))
 
 ## 📊 Project Visualizations & Validation
 
+## 📐 Architecture Overview
+![Flask Observability Architecture](screenshots/Flask%20observability%20architecture%20diagram.png)
+
 ### 1. Application Health (Flask)
 ![Flask App](screenshots/FLask.png)
 
