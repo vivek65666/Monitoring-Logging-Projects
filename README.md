@@ -1,0 +1,27 @@
+# 📊 Monitoring & Logging Projects
+
+This repository contains production-style DevOps learning projects focusing on infrastructure observability, log aggregation, metrics monitoring, and automated health checking.
+
+---
+
+## 🚀 Projects Included
+
+### 1. [DevOps Log Monitoring & Auto-Healing Platform](./devops-log-monitoring/)
+* **Description:** A Flask-based demo application featuring structured JSON logs, Prometheus metrics, custom liveness/readiness health probes, and simulated failure/recovery workflows.
+* **Tech Stack:** Python Flask, Docker, Docker Compose, Kubernetes, Prometheus, Grafana, Loki, Promtail, Terraform, GitHub Actions.
+* **Key Features:**
+  * Real-time metrics scraping and custom alerting rules.
+  * Log shipping and querying via Promtail and Grafana Loki.
+  * Kubernetes probes (`readinessProbe` and `livenessProbe`) for traffic control and auto-healing behavior.
+
+### 2. [Prometheus & Grafana Monitoring](./prometheus-grafana-monitoring/)
+* **Description:** An observability stack setup designed to monitor application performance metrics, system resource utilization, and health alerts.
+* **Tech Stack:** Prometheus, Grafana, Alertmanager, Docker.
+* **Key Features:**
+  * Pre-configured dashboards for request rates and system vitals.
+  * Alertmanager integration for tracking threshold breaches.
+
+---
+
+## 🛠️ Getting Started
+Navigate into any of the project subdirectories to find dedicated setup guides, docker compose files, and deployment instructions tailored to that specific lab.
