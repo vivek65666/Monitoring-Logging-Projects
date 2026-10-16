@@ -4,8 +4,6 @@
 
 ### Detect failures. Explore logs. Monitor metrics. Alert. Recover safely.
 
-**A beginner-friendly, production-style learning project by [@the.devops111](https://www.instagram.com/the.devops111/)**
-
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Probes-326CE5?logo=kubernetes&logoColor=white)
@@ -392,9 +390,6 @@ This is a learning scaffold, not a production-ready observability platform. Befo
 ---
 
 <div align="center">
-
-### 🚀 Learn • Build • Deploy • Monitor
-
-**Follow [@the.devops111](https://www.instagram.com/the.devops111/) for practical DevOps projects and production scenarios.**
+*
 
 </div>
