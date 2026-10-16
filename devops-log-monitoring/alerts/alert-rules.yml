@@ -1,0 +1,11 @@
+groups:
+  - name: demo-app-alerts
+    rules:
+      - alert: DemoAppHttp5xx
+        expr: sum(rate(demo_http_requests_total{status=~"5.."}[5m])) > 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "The demo application returned HTTP 5xx responses"
+          description: "Inspect application logs and recent requests."

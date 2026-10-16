@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-log-monitoring
+  namespace: log-monitoring
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-log-monitoring
+  template:
+    metadata:
+      labels:
+        app: devops-log-monitoring
+    spec:
+      containers:
+        - name: app
+          image: devops-log-monitoring:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 5
+            failureThreshold: 2
+          livenessProbe:
+            httpGet:
+              path: /health/live
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          resources:
+            requests: {cpu: 100m, memory: 96Mi}
+            limits: {cpu: 500m, memory: 256Mi}

@@ -1,0 +1,22 @@
+{
+  "title": "DevOps Log Monitoring Overview",
+  "uid": "devops-log-monitoring",
+  "schemaVersion": 41,
+  "version": 1,
+  "refresh": "10s",
+  "time": {"from": "now-15m", "to": "now"},
+  "panels": [
+    {
+      "id": 1, "type": "timeseries", "title": "Request rate by HTTP status",
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0},
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "sum(rate(demo_http_requests_total[5m])) by (status)", "legendFormat": "HTTP {{status}}", "refId": "A"}]
+    },
+    {
+      "id": 2, "type": "stat", "title": "Total request rate",
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0},
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "sum(rate(demo_http_requests_total[5m]))", "refId": "A"}]
+    }
+  ]
+}

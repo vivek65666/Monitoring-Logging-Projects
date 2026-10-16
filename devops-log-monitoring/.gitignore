@@ -1,0 +1,1 @@
+__pycache__/\n.pytest_cache/\n.venv/\n.env\n*.py[cod]\nterraform/.terraform/\nterraform/terraform.tfstate*\nterraform/project-info.txt\n

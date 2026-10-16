@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-log-monitoring
+  namespace: log-monitoring
+spec:
+  selector:
+    app: devops-log-monitoring
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+  type: ClusterIP

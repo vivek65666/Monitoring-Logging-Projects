@@ -1,0 +1,11 @@
+# Reference snippet only. deployment.yaml already contains the probes.
+readinessProbe:
+  httpGet:
+    path: /health/ready
+    port: 8080
+  periodSeconds: 5
+livenessProbe:
+  httpGet:
+    path: /health/live
+    port: 8080
+  periodSeconds: 10
